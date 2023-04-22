@@ -1,0 +1,74 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(pink , skyblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-info{
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    margin-top: 2rem;
+    background-color: skyblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tic-tac-toe{
+    width: 90%;
+    max-width: 20rem;
+    background-color: bisque;
+    border-radius: 1rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    aspect-ratio: 1/1;
+    margin-top: 2rem ;
+    margin-bottom: 2rem;
+  
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.box1 , .box2 , .box4 , .box5{
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+.box3 , .box6{
+    border-bottom: 2px solid white;
+}
+.box7 , .box8{
+    border-right: 2px solid white;
+}
+
+.btn{
+    background-color: skyblue;
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 8rem;
+    height: 2rem;
+    opacity: 0;
+}
+.win{
+    background-color: green;
+}
+.active{
+    opacity: 1;
+}
